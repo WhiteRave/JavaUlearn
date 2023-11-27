@@ -28,27 +28,27 @@ public class DefaultLogger extends AbstractLogger {
     }
 
     public String info(String message) {
-        return "[INFO] " + "<" + calendar.getTime()
-                + "> Вход пользователя: " + message;
+        return String.format("[INFO] <%s> Вход пользователя: %s",
+                calendar.getTime(), message);
     }
 
     public String debug(String message) {
-        return "[DEBUG] " + "<" + calendar.getTime()
-                + "> " + name + " - " + message;
+        return String.format("[DEBUG] <%s> %s - %s",
+                calendar.getTime(), name, message);
     }
 
     public String error(String message) {
-        return "[ERROR] " + "<" + calendar.getTime()
-                + "> Не удалось найти данные пользователя: " + message;
+        return String.format("[ERROR] <%s> Не удалось найти данные пользователя: %s",
+                calendar.getTime(), message);
     }
 
     public String warning(String message) {
-        return "[WARNING] " + "<"+ calendar.getTime()
-                + "> " + "Обнаружен неавторизованный доступ в систему: " + message;
+        return String.format("[WARNING] <%s> Обнаружен неавторизованный доступ в систему: %s",
+                calendar.getTime(), message);
     }
 
     public String toString() {
-        return name + " — DefaultLogger";
+        return String.format("%s — DefaultLogger", name);
     }
 }
 
@@ -58,27 +58,27 @@ public class InputControlLogger extends AbstractLogger {
     }
 
     public String info(String message) {
-        return "[INFO] " + "<" + calendar.getTime()
-                + "> Вход пользователя: " + message;
+        return String.format("[INFO] <%s> Вход пользователя: %s",
+                calendar.getTime(), message);
     }
 
     public String debug(String message) {
-        return "[DEBUG] " + "<" + calendar.getTime()
-                + "> " + name + " - " + message;
+        return String.format("[DEBUG] <%s> %s - %s",
+                calendar.getTime(), name, message);
     }
 
     public String error(String message) {
-        return "[ERROR] " + "<" + calendar.getTime()
-                + "> Не удалось найти данные пользователя: " + message;
+        return String.format("[ERROR] <%s> Не удалось найти данные пользователя: %s",
+                calendar.getTime(), message);
     }
 
     public String warning(String message) {
-        return "[WARNING] " + "<" + calendar.getTime()
-                + "> Обнаружен неавторизованный доступ в систему: " + message;
+        return String.format("[WARNING] <%s> Обнаружен неавторизованный доступ в систему: %s",
+                calendar.getTime(), message);
     }
 
     public String toString() {
-        return name + " — InputControlLogger";
+        return String.format("%s — InputControlLogger", name);
     }
 }
 

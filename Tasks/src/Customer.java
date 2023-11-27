@@ -1,6 +1,6 @@
 import java.util.ArrayList;
 import java.util.Scanner;
-
+/*
 class Main {
     private static final String HELP_MESSAGE = "Примеры команд:\n" +
             "Добавление клиента: add Иван Иванов ivanivanov@mail.ru +79876543210\n" +
@@ -133,16 +133,9 @@ class CustomerStorage {
 
     public void checkLengthCorrectness(String[] data, int correctLength) {
         if (data.length != correctLength) {
-            throw new IllegalArgumentException("Недопустимая длина строки2: " + data.length);
+            throw new IllegalArgumentException("Недопустимая длина строки: " + data.length);
         }
     }
 }
-/*
-    public void checkLengthCorrectness(String[] data, int correctLength) {
-        if (data.length != correctLength) {
-            throw new IllegalArgumentException("Недопустимая длина строки2: " + data.length);
-        }
-    }
-
 
  */
